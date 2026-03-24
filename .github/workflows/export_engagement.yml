@@ -5,6 +5,9 @@ on:
     - cron: '30 23 * * 0'  # 毎週月曜 08:30 JST = 日曜 23:30 UTC
   workflow_dispatch: # 手動実行も可能
 
+permissions:
+  contents: write
+
 jobs:
   export:
     runs-on: ubuntu-latest
